@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creacion de jugadores</title>
+</head>
+
+<body>
+    <nav>
+        <a href="TablaJugadores.html">Tabla jugadores</a>
+        <a href="Equipos.html">Insertar equipos</a>
+    </nav>
+    <div>
+        <h2>Insertar nuevo jugador</h2>
+        <form id="FormularioNuevoJugador">
+            <label for="nuevo_nombre">Nombre </label>
+            <input type="text" name="nuevo_nombre" id="">
+            <label for="nuevo_Pais">Pais </label>
+            <input type="text" name="nuevo_Pais" id="">
+            <label for="nuevo_Nacimiento">Nacimiento </label>
+            <input type="date" name="nuevo_Nacimiento" id="">
+            <label for="new_equipo">Equipo </label>
+            <select name="new_equipo" id="new_equipos">
+            </select>
+            <input type="submit" value="Enviar" id="nuevo_EnviarForms">
+        </form>
+    </div>
+
+    <div>
+        <h2>Actualizar jugador</h2>
+        <form id="FormularioActualizarJugador">
+            <label for="id">ID para actualizar</label>
+            <input type="number" name="id" id="">
+            <label for="nombre">Nombre </label>
+            <input type="text" name="nombre" id="">
+            <label for="Pais">Pais </label>
+            <input type="text" name="Pais" id="">
+            <label for="Nacimiento">Nacimiento</label>
+            <input type="date" name="Nacimiento" id="">
+            <label for="new_equipo">Equipo </label>
+            <select name="equipos" id="equipos">
+            </select>
+            <input type="submit" value="Actualizar" id="EnviarForms">
+        </form>
+    </div>
+    <script src="JavaScript/Jugadores.js"></script>
+    <script src="JavaScript/Services.js"></script>
+</body>
+
+</html>

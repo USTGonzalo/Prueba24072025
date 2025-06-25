@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gestión de Equipos</title>
+</head>
+<body>
+    <nav>
+        <a href="TablaEquipos.html">Tabla equipos</a>
+        <a href="Jugadores.html"> Insertar Jugadores</a>
+    </nav>
+    <div>
+        <h2>Insertar nuevo equipo</h2>
+        <form id="FormularioNuevoEquipo">
+            <label for="nuevo_league">Liga:</label>
+            <input type="text" name="nuevo_league" id="nuevo_league" required />
+            <br /><br />
+            <label for="nuevo_name">Nombre del equipo:</label>
+            <input type="text" name="nuevo_name" id="nuevo_name" required />
+            <br /><br />
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <div>
+        <h2>Actualizar equipo</h2>
+        <form id="FormularioActualizarEquipo">
+            <label for="id">ID del equipo a actualizar:</label>
+            <input type="number" name="id" id="id" />
+            <br /><br />
+            <label for="league">Liga:</label>
+            <input type="text" name="league" id="league" />
+            <br /><br />
+            <label for="name">Nombre del equipo:</label>
+            <input type="text" name="name" id="name" />
+            <br /><br />
+            <button type="submit">Actualizar Equipo</button>
+        </form>
+    </div>
+
+    <div id="mensaje-error" style="display:none; background-color:red; color:white; padding: 5px;"></div>
+    <div id="mensaje-exito" style="display:none; color:green; padding: 5px;"></div>
+
+    <script src="JavaScript/Equipos.js"></script>
+    <script src="JavaScript/Services.js"></script>
+</body>
+</html>
